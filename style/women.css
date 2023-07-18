@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/Proxima\ Nova\ Font.otf') format('truetype');
+  }
+  
+
+/* Utilities */
+
+:root{
+
+    /* Fonts */
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Proxima', sans-serif
+
+
+    /* Colors */
+    --primaryColor:"";
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    /* border:1px solid black; */
+    background-color: red;
+    margin:auto;
+}
+.navbarContainer{
+    width:1200px;
+    /* border:1px solid red; */
+    margin:auto;
+}
+.upperDiv{
+    display:flex;
+    margin:auto;
+    /* border:1px solid white; */
+}
+
+.navMenu{
+    display:flex;
+    align-items: end;
+    margin: 15px 18px;
+    width:720px;
+    margin:auto;
+    margin-bottom:5px;
+}
+.navMenu ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    /* border: 1px solid red; */
+    margin:auto;
+    text-align: end;
+}
+
+.navMenu>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin:10px 0px;
+    padding:0px 10px;
+    display: flex;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin:auto
+  }
+  
+
+  @media all and (min-width:481px) and (max-width:678px) {
+    #container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media all and (min-width:320px) and (max-width:480px) {
+    #container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
